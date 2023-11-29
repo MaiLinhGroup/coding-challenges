@@ -1,3 +1,4 @@
+# https://www.letsy.xyz/2023/11/basic-exercises-for-competitive.html
 '''
 Excersise 1: Write a function that reads a string s, and prints that line on 
 the standard output in reverse, that is, flipped right-to-left.
