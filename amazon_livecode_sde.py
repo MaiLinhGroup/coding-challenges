@@ -21,3 +21,24 @@ def rle_encoder(input):
         return output
     
 print(rle_encoder("WWWBCAAAAAB") == "3W1B1C5A1B")
+
+# Given an integer array nums that does not contain any zeros,
+# return the largest positive integer k such that -k also exists in the array.
+# If such an integer does not exist, return -1.
+
+def largest_positive_num(nums):
+    k = -1
+    
+    if len(nums) <= 1:
+        return k
+    
+    s = set(nums) # O(n)
+    
+    for i in nums: # O(n)
+        if -i in s and i > k :
+            k = i
+    
+    # O(n) + O(n) = 2*O(n) = O(n)
+    return k
+
+print(largest_positive_num([5,8,-1,2,-2,-8]))
